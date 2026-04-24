@@ -1,16 +1,15 @@
 """
-DenStream: Density-based clustering for evolving data streams.
-
-Main implementation combining online and offline phases.
+DStream: Density-based clustering for evolving data streams.
+Main implementation combining online and offline phases
 """
 
-from src.online_phase import DenStreamOnline
-from src.offline_phase import DenStreamOffline
+from src.online_phase import DStreamOnline
+from src.offline_phase import DStreamOffline
 
 
-class DenStream:
+class DStream:
     """
-    DenStream algorithm for stream clustering.
+    DStream algorithm for stream clustering.
 
     Combines online phase (maintains micro-clusters) with offline phase
     (post-processes summaries using density-based clustering).
@@ -18,8 +17,8 @@ class DenStream:
 
     def __init__(self, **kwargs):
         """Initialize DenStream with online and offline phases."""
-        self.online = DenStreamOnline(**kwargs)
-        self.offline = DenStreamOffline(**kwargs)
+        self.online = DStreamOnline(**kwargs)
+        self.offline = DStreamOffline(**kwargs)
 
     def partial_fit(self, X, **kwargs):
         """Process a batch of streaming data."""

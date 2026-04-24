@@ -1,18 +1,18 @@
 """
-Offline phase of DenStream algorithm.
+Offline phase of DStream algorithm.
 Post-processing of summaries using DBSCAN/Adjacency Offline Clustering.
 """
 
 
-class DenStreamOffline:
-    """Offline phase of DenStream algorithm."""
+class DStreamOffline:
+    """Offline phase of DStream algorithm."""
 
     def __init__(self, **kwargs):
-        """Initialize offline phase parameters."""
+        """Initialize offline phase parameters """
         pass
 
     def cluster(self, micro_clusters):
-        """Cluster micro-clusters using DBSCAN or similar approach."""
+        """Cluster micro-clusters using DBSCAN or adjacency-based clustering."""
         pass
 
     def get_final_clusters(self):

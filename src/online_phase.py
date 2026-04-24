@@ -1,5 +1,5 @@
 """
-Online phase of DenStream algorithm.
+Online phase of DStream algorithm.
 Maintains core micro-clusters (CMC) and outlier micro-clusters (OMC).
 """
 
@@ -13,8 +13,8 @@ class OutlierMicroCluster:
     pass
 
 
-class DenStreamOnline:
-    """Online phase of DenStream algorithm."""
+class DStreamOnline:
+    """Online phase of DStream algorithm."""
 
     def __init__(self, **kwargs):
         """Initialize online phase parameters."""
