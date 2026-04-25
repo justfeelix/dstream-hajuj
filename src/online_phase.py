@@ -15,7 +15,7 @@ class GridCell:
     def __init__(self, t_m):
         self.weight = 0.0 # initial weight
         self.t_m = t_m # last update time
-        self.status = Status.NOISE # initial status
+        self.status = Status.SPARSE # initial status
 
 
 class OnlinePhase_StreamClusterer:
