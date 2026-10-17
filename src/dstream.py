@@ -17,7 +17,7 @@ class DStream:
 
     def learn(self, xs, ts) -> list:
         """Feed a new batch of data into the online phase using the framework's learn method."""
-        return self.online_phase.learn(xs, ts)
+        return self.online_phase.learn_one(xs, ts)
 
     def predict(self, X_batch=None):
         """Trigger the offline phase to get the current clustering."""
